@@ -1,3 +1,5 @@
+@import url('https://fonts.cdnfonts.com/css/yahoo');
+
 :root {
     --color-primary: #fed330;
     --color-secondary: #fc0019;
@@ -11,46 +13,49 @@
     font-family: system-ui, -apple-system, Arial, Helvetica, sans-serif;
     list-style: none;
 }
+
 header{
     height: 7vh;
     width: 100%;
     display: flex;
     align-items: center;
     background-color: var(--color-secondary);
+    position: fixed;
 }
+
 nav{
     height: 7vh;
     display: flex;
     align-items: center;
+}
+
+.container{
     width: 950px;
-    margin: 0 auto;
+    margin: 0 auto; 
+    justify-content: space-around;
 }
 
-.logo {
-    display: flex;
-    padding-left: .4em;
-}
-
-.ejc{
+.title{
+    text-align: center;
+    color: var(--color-preto);
     position: relative;
+    display: inline-block;
+    font-size: 2.2em;
+    text-transform:capitalize;
+    margin-bottom: 60px;
+}
+
+.title:after {
+    border-bottom: 3px solid #111111;
+    content: "";
+    display: block;
+    position: relative;
+    right: 0px;
+    width: 1em;
+    z-index: 0;
+    top:-10px;
+}
+
+.title::first-letter { 
     font-family: 'Yahoo',sans-serif;
-    font-size: 2em;
-    color: var(--color-branco);
-    text-shadow: .06em .06em var(--color-preto), 
-    -.06em -.06em var(--color-preto),
-    .06em -.06em var(--color-preto),
-    -.06em .06em var(--color-preto);
-}
-
-.latter_e{
-    top: -.2em;
-}
-
-.latter_j{
-    top: .3em;
-    left: -.4em;
-}
-
-.latter_c{
-    left: -.3em;
-}
+ }
