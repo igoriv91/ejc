@@ -4,3 +4,9 @@
     font-family: system-ui, -apple-system, Arial, Helvetica, sans-serif;
     list-style: none;
 }
+
+.a{
+    height: 100px;
+    width: 100vw;
+    background-color: aqua;
+}
