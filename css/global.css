@@ -6,3 +6,7 @@
     --color-branco: #fdfdfd;
     --color-preto: #221917;
 }
+.PrimeiraLetraEJC::first-letter{
+    font-family: 'Yahoo',sans-serif;
+    text-decoration: underline;
+}

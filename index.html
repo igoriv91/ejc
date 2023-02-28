@@ -2,62 +2,101 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/global.css">
-    <link rel="stylesheet" href="/css/logo.css">
-    <link rel="stylesheet" href="/css/custom.scss">
-    <link rel="stylesheet" href="/css/carrousel.css">
-    <title>EJC</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/global.css">
+  <link rel="stylesheet" href="/css/logo.css">
+  <link rel="stylesheet" href="/css/custom.scss">
+  <link rel="stylesheet" href="/css/carrousel.css">
+  <script src="https://kit.fontawesome.com/169add9c26.js" crossorigin="anonymous"></script>
+  <title>EJC</title>
 </head>
 
 <body>
+  <nav class="navbar fixed-top shadow" style="background-color: var(--color-secondary);">
     <div class="container">
-        <nav class="navbar fixed-top" style="background-color: var(--color-secondary);">
-            <div class="container">
-                <span class="navbar-brand logo"><span class="ejc latter_e">E</span><span class="ejc latter_j">J</span><span
-                    class="ejc latter_c">C</span></span >
-            </div>
-        </nav>
+      <span class="navbar-brand logo fonteEjc"><span class="ejc latter_e">E</span><span
+          class="ejc latter_j">J</span><span class="ejc latter_c">C</span></span>
     </div>
-    <div id="carouselmain" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselmain" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselmain" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselmain" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div id="itenscarousel" class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="http://www.ejcitabuna.com.br/assets/1.png" class="d-block w-100" alt="banner1">
-          </div>
-          <div class="carousel-item">
-            <img src="http://www.ejcitabuna.com.br/assets/2.png" class="d-block w-100" alt="banner2">
-          </div>
-          <div class="carousel-item">
-            <img src="http://www.ejcitabuna.com.br/assets/3.png" class="d-block w-100" alt="banner3">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselmain" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselmain" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+  </nav>
+  <div id="carouselmain" class="carousel slide " data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselmain" data-bs-slide-to="0" class="active" aria-current="true"
+        aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselmain" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselmain" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div id="itenscarousel" class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="http://www.ejcitabuna.com.br/assets/1.png" class="d-block w-100" alt="banner1">
       </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
-        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
-        crossorigin="anonymous"></script>
+      <div class="carousel-item">
+        <img src="http://www.ejcitabuna.com.br/assets/2.png" class="d-block w-100" alt="banner2">
+      </div>
+      <div class="carousel-item">
+        <img src="http://www.ejcitabuna.com.br/assets/3.png" class="d-block w-100" alt="banner3">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselmain" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselmain" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <div class="border border-4 border-top-0 border-end-0 border-start-0 vw-100">
+    <div class="container p-5">
+      <h1 class="text-center pb-5 PrimeiraLetraEJC">Nossa historia</h1>
+      <p class="text-center"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas vel libero, quam
+        accusantium earum consequatur. Unde est voluptatum saepe non doloremque molestiae, libero neque dolore
+        consequatur quisquam itaque nisi impedit.</p>
+    </div>
+  </div>
+  <div class="border border-4 border-top-0 border-end-0 border-start-0 vw-100">
+    <div class="container p-5">
+      <h1 class="text-center pb-5 PrimeiraLetraEJC">Todos nós</h1>
+      <div class="d-flex gap-3">
+        <div class="card border-0" style="width: 18rem;">
+          <img src="http://www.ejcitabuna.com.br/assets/diocesano.jpg" class="card-img-top object-fit-cover h-75 rounded-1" alt="diocesano">
+          <div class="card-body">
+            <h5 class="card-title text-center mb-3 PrimeiraLetraEJC">Diocesano</h5>
+            <div
+              class="fa-xl w-50 ms-auto me-auto justify-content-around d-flex border border-2 border-start-0 border-end-0 pt-2 pb-2">
+              <a role="button"><i class="fa-brands fa-instagram"></i></a>
+              <a role="button"><i class="fa-regular fa-envelope"></i></a>
+              <a role="button"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card border-0" style="width: 18rem;">
+          <img src="http://www.ejcitabuna.com.br/assets/jardimprimavera.jfif" class="card-img-top object-fit-cover h-75 rounded-1" alt="diocesano">
+          <div class="card-body">
+            <h5 class="card-title text-center mb-3 PrimeiraLetraEJC">Jardim Primavera </h5>
+            <div
+              class="fa-xl w-50 ms-auto me-auto justify-content-around d-flex border border-2 border-start-0 border-end-0 pt-2 pb-2">
+              <a role="button"><i class="fa-brands fa-instagram"></i></a>
+              <a role="button"><i class="fa-regular fa-envelope"></i></a>
+              <a role="button"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

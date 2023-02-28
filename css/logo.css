@@ -2,12 +2,16 @@
 .logo {
     display: flex;
     padding-left: .4em;
+    font-size: 2em;
+}
+
+.fonteEjc{
+    font-family: 'Yahoo',sans-serif;
 }
 
 .ejc{
     position: relative;
-    font-family: 'Yahoo',sans-serif;
-    font-size: 2em;
+    
     color: var(--color-branco);
     text-shadow: .06em .06em var(--color-preto), 
     -.06em -.06em var(--color-preto),
