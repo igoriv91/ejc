@@ -3,10 +3,67 @@
 :root {
     --color-primary: #fed330;
     --color-secondary: #fc0019;
+    --color-background: #fff;
     --color-branco: #fdfdfd;
     --color-preto: #221917;
+    --color-texto-primary: --color-preto;
+    --color-texto-secondary: #403f52;
 }
-.PrimeiraLetraEJC::first-letter{
-    font-family: 'Yahoo',sans-serif;
+
+* {
+    font-family: Nunito;
+    color: var(--color-texto-primary);
+}
+
+p {
+    color: var(--color-texto-secondary);
+}
+    
+.PrimeiraLetraEJC::first-letter {
+    font-family: 'Yahoo', sans-serif !important;
     text-decoration: underline;
+}
+
+nav {
+    height: 15vh;
+}
+
+#logo {
+    height: 6vh;
+}
+
+#vetor-topo {
+    background-image: url("http://www.ejcitabuna.com.br/assets/vectorTop.svg");
+    height: 90vh;
+    background-position:bottom center;
+    background-repeat: no-repeat;
+    padding-top: 15vh;
+}
+
+#vetor-topo img {
+    width: 100%;
+    animation: 5s ease-in-out 0s 1 slideInFromDown;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slideInFromDown {
+    0% {
+        transform: translatey(-3%);
+    }
+    50% {
+        transform: translatey(0);
+    }
+    100% {
+        transform: translatey(-3%);
+    }
+}
+
+@keyframes fateIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
