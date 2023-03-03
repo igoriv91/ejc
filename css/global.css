@@ -1,7 +1,7 @@
 @import url('https://fonts.cdnfonts.com/css/yahoo');
 
 :root {
-    --color-primary: #fed330;
+    --color-primary: #ffc700;
     --color-secondary: #fc0019;
     --color-background: #fff;
     --color-branco: #fdfdfd;
@@ -25,7 +25,9 @@ p {
 }
 
 nav {
-    height: 15vh;
+    height: 10vh;
+    max-width: 1940px;
+    background-color: var(--color-primary);
 }
 
 #logo {
@@ -44,6 +46,11 @@ nav {
     width: 100%;
     animation: 5s ease-in-out 0s 1 slideInFromDown;
     animation-iteration-count: infinite;
+}
+
+#matrizes {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
 }
 
 @keyframes slideInFromDown {
