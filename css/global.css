@@ -1,76 +1,97 @@
-@import url('https://fonts.cdnfonts.com/css/yahoo');
+@import url("https://fonts.cdnfonts.com/css/yahoo");
 
 :root {
-    --color-primary: #ffc700;
-    --color-secondary: #fc0019;
-    --color-background: #fff;
-    --color-branco: #fdfdfd;
-    --color-preto: #221917;
-    --color-texto-primary: --color-preto;
-    --color-texto-secondary: #403f52;
+  --color-primary: #ffc700;
+  --color-secondary: #fc0019;
+  --color-background: #fff;
+  --color-branco: #fdfdfd;
+  --color-preto: #221917;
+  --color-texto-primary: --color-preto;
+  --color-texto-secondary: #403f52;
 }
 
 * {
-    font-family: Nunito;
-    color: var(--color-texto-primary);
+  font-family: Nunito;
+  color: var(--color-texto-primary);
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+  padding: 2px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--color-preto);
+  border-radius: 10px;
+  border: 2px solid #fff;
 }
 
 p {
-    color: var(--color-texto-secondary);
-}
-    
-.PrimeiraLetraEJC::first-letter {
-    font-family: 'Yahoo', sans-serif !important;
-    text-decoration: underline;
+  color: var(--color-texto-secondary);
 }
 
 nav {
-    height: 10vh;
-    max-width: 1940px;
-    background-color: var(--color-primary);
+  height: 10vh;
+  max-width: 1940px;
+  background-color: var(--color-primary);
+}
+
+section{
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 #logo {
-    height: 6vh;
+  height: 6vh;
 }
 
 #vetor-topo {
-    background-image: url("http://www.ejcitabuna.com.br/assets/vectorTop.svg");
-    height: 90vh;
-    background-position:bottom center;
-    background-repeat: no-repeat;
-    padding-top: 15vh;
+  background-image: url("http://www.ejcitabuna.com.br/assets/vectorTop.svg");
+  height: 90vh;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  padding-top: 15vh;
 }
 
 #vetor-topo img {
-    width: 100%;
-    animation: 5s ease-in-out 0s 1 slideInFromDown;
-    animation-iteration-count: infinite;
+  width: 100%;
+  animation: 5s ease-in-out 0s 1 slideInFromDown;
+  animation-iteration-count: infinite;
 }
 
 #matrizes {
-    margin-top: 10vh;
-    margin-bottom: 10vh;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
 }
 
+
+.PrimeiraLetraEJC::first-letter {
+    font-family: "Yahoo", sans-serif !important;
+    text-decoration: underline;
+  }
+
 @keyframes slideInFromDown {
-    0% {
-        transform: translatey(-3%);
-    }
-    50% {
-        transform: translatey(0);
-    }
-    100% {
-        transform: translatey(-3%);
-    }
+  0% {
+    transform: translatey(-3%);
+  }
+  50% {
+    transform: translatey(0);
+  }
+  100% {
+    transform: translatey(-3%);
+  }
 }
 
 @keyframes fateIn {
-    0% {
-        opacity: 0;
-    }
+  0% {
+    opacity: 0;
+  }
 
-    100% {
-        opacity: 1;
-    }
+  100% {
+    opacity: 1;
+  }
 }
